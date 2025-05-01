@@ -89,6 +89,7 @@ nav{
     position: fixed;
     overflow: hidden;
     transition: scale linear 150ms;
+    pointer-events: none;
 }
 .mediaCircle img{
     width: 100%;
