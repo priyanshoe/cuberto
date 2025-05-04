@@ -39,7 +39,6 @@ function leaveEnter() {
             });
     });
 }
-leaveEnter();
 
 
 function costumCursor() {
@@ -55,27 +54,39 @@ function costumCursor() {
         })
     })
 }
-costumCursor();
+
+function imageSlider(){
+
+    gsap.to('.imageSlider', {
+        scrollTrigger: {
+            trigger: '.imageContainer3',
+            start: "top 14%",
+            end: 'top -90%',
+            scrub: 4,
+            pin: true,
+            // markers:true,
+    
+        },
+        y: "-303%"
+    })
+    
+    gsap.to('.page3', {
+        scrollTrigger: {
+            trigger: '.page3',
+            start: "top top",
+            end: 'top -100%',
+            pin: true,
+        }
+    })
+}
 
 
-gsap.to('.imageSlider', {
-    scrollTrigger: {
-        trigger: '.imageContainer3',
-        start: "top 14%",
-        end: 'top -90%',
-        scrub: 4,
-        pin: true,
-        // markers:true,
+if(window.innerWidth>600){
+    console.log('workinggg');
+    
+    costumCursor();
+    leaveEnter();
+    imageSlider();
 
-    },
-    y: "-303%"
-})
-
-gsap.to('.page3', {
-    scrollTrigger: {
-        trigger: '.page3',
-        start: "top top",
-        end: 'top -100%',
-        pin: true,
-    }
-})
+    
+}

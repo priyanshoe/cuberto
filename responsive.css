@@ -1,0 +1,69 @@
+@media screen and (max-width:600px) {
+    .cursor{
+        display: none;
+    }
+    nav{
+        height: 5%;
+    }
+    .logo h2{
+        font-size: 5vw;
+    }
+    .links{
+        width: 50%;
+    }
+    .links h3{
+        font-size: 3.5vw;
+    }
+    
+    .heading{
+        flex-direction: column;
+        gap: 0;
+    }
+    .comment h3{
+        font-size: 3vw;
+    }
+    .heading h1{
+        font-size: 14vw;
+    }
+    .mediaCircle{
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .page2{
+        height: 25vh;
+    }
+    .page2 h3{
+        font-size: 4vw;
+    }
+    .imageContainer{
+        height: 40%;
+    }
+
+    .page3{
+        flex-direction: column;
+        gap: 10vw;
+    }
+    .left{
+        gap: 1vw;
+    }
+    .left h3{
+        font-size: 3vw;
+    }
+    .left h2{
+        font-size: 4.5vw;
+    }
+    .left span{
+        font-size: 2.5vw;
+    }
+    .right{
+        width: 90%;
+    }
+    .imageSlider{
+        overflow: scroll;
+
+    }
+    .imageSlider::-webkit-scrollbar{
+        display: none;
+    }
+}
