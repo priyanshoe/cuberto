@@ -67,3 +67,15 @@
         display: none;
     }
 }
+
+.links h3:hover, .logo h2:hover{
+    cursor: pointer;
+}
+
+.imageContainer h1:nth-child(2):hover{
+    color: black;
+    -webkit-text-stroke: 0;
+}
+.imageContainer3:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.26);
+}
